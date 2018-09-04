@@ -89,11 +89,42 @@ essas informações são aramazenadas nas structs da seguinte forma:
 	    file_recifeM.close(); 
 	    ...
 
-isso é feito para todos os onibus! :smile:
+isso é feito para todos os onibus!
 
 ### ESCOLHA DOS DESTINOS 
-Nessa etapa o usuário e con
+Nessa etapa o usuário e intruido a fazer suas escolhas tanto de destino, quanto de horário.As escolhas são feitas e automáticamente o cliente é direcionado ao ônibus desejado.
 
+---
+	void escolher_onibus(int a,int b,Onibus &recM,Onibus &recN,Onibus &jpM,Onibus &jpN,string vetorbusrecM[MAXL],string vetorbusrecN[MAXL],string vetorbusjpM[MAXL],string vetorbusjpN[MAXL])
+	{
+	    if(a==1&&b==1)
+	    {
+	          mostrar_bus(vetorbusrecM);
+	          reservafinal(recM,vetorbusrecM);
+	    }
+	    else if(a==1&&b==2)
+	    {
+	        mostrar_bus(vetorbusrecN);
+	        reservafinal(recN,vetorbusrecN);
+	    }
+	    else if(a==2&&b==1)
+	    {
+	        mostrar_bus(vetorbusjpM);
+	        reservafinal(jpM,vetorbusjpM);
+	    }
+	    else
+	    {
+	          mostrar_bus(vetorbusjpN);
+	          reservafinal(jpN,vetorbusjpN);
+	    }
+	}
+
+
+### SELEÇÃO DAS POLTRONAS
+
+Nesse momento o usuário se depara com os assentos do ônibus escolhido, podendo escolher o assento de sua preferencia.As poltrona reservadas por outros clientes são visualizadas em forma de x, indicando que aquele assente não pode ser escolhido.
+<span></span>
+<img src="images/onibus.png">
 
 
 
