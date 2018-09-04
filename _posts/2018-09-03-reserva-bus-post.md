@@ -41,6 +41,7 @@ A lógica do programa é baseada na biblioteca **fstream** e na utilização do 
     	Pessoa ocupantes[MAXL];
 	};
 ---
+
 ### INICIO DO PROGRAMA
 
 
