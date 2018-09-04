@@ -4,13 +4,13 @@ title: Reserva-Bus
 categories: misc
 ---
 ### INTRODUÇÃO
-Olá, nesse primeiro post irei mostrar um projeto desenvolvido por mim durante a disciplina de Linguagem de Programação.
-O projeto consiste na construção de um sistema de reserva de passagem de onibus, o mesmo foi implementado em c++ puro e foi inspirado em um sistema já existente concebido pela empresa Gontijo de transportes, a aplicação conta com muitas opções de destinos e horários e
-apresenta uma interatividade bem grande com o cliente.Tomando como base esse sistema,tive a oportunidade de desenvolver algo bem perecido, porém com menos opções de horários e destinos.
+Olá! Nesse primeiro post irei mostrar um projeto desenvolvido por mim durante a disciplina de Linguagem de Programação.
+Este projeto consiste na construção de um sistema de reserva de passagem de onibus. O mesmo foi implementado em c++ puro e foi inspirado em um sistema já existente concebido pela empresa Gontijo de transportes, à aplicação conta com muitas opções de destinos e horários, 
+apresentando uma interatividade bem grande com o cliente.Tomando como base esse sistema,tive a oportunidade de desenvolver algo bem perecido, porém com menos opções de horários e destinos.
 <span></span>
 <img src="images/bemvindo.png">
 ### LÓGICA DO PROGRAMA
-A lógica do programa é baseada na biblioteca **fstream** e na utilização do tipo **struct**.basicamente no começo do programa há uma leitura dos arquivos .txt referentes a cada destido;dentro de cada arquivo entá contido informaçôes como: nome,RG,numero do assento e se o mesmo esta ocupado ou não,esses dados são carregadas para as structs no inicio da implementação;Com este processo feito, o usuário poderá escolher tranquilamente seu destino e assento. Ao final do programa as informações geradas pelo usuário(essas foram armazenadas nas structs em quanto o cliente fazia suas escolhas) são carregadas para os arquivos .txt referentes a cada destino.
+A lógica do programa é baseada na biblioteca **fstream** e na utilização do tipo **struct**.Basicamente no começo do programa há uma leitura dos arquivos .txt referentes a cada destido;dentro de cada arquivo entá contido informaçôes como: nome,RG,numero do assento e se o mesmo esta ocupado ou não.Esses dados são carregadas para as structs no inicio da implementação.Com este processo feito, o usuário poderá escolher tranquilamente seu destino e assento. Ao final do programa as informações geradas pelo usuário(as armazenadas nas structs em quanto o cliente fazia suas escolhas) são carregadas para os arquivos .txt referentes a cada destino.
 ### BIBLIOTECAS UTILIZADAS
 ---
 	#include<iostream>
@@ -44,7 +44,7 @@ A lógica do programa é baseada na biblioteca **fstream** e na utilização do 
 
 
 ### INICIO DO PROGRAMA
-Ás structs sao carregadas com os dados que foram armazenados nos .txts refentes a cada destino.
+As structs sao carregadas com os dados que foram armazenados nos .txts refentes a cada destino.
 Esses arquivos tem a seguinte disposição:
 
 ---
@@ -66,7 +66,7 @@ Esses arquivos tem a seguinte disposição:
 	rgv
 	...
 
-essas informações são aramazenadas nas structs da seguinte forma:
+estas informações são aramazenadas nas structs da seguinte forma:
 
 	void carregar_dados(Onibus &recM,Onibus &recN,Onibus &jpM,Onibus &jpN)
 	{
@@ -93,7 +93,7 @@ essas informações são aramazenadas nas structs da seguinte forma:
 isso é feito para todos os onibus!
 
 ### ESCOLHA DOS DESTINOS 
-Nessa etapa o usuário e intruido a fazer suas escolhas tanto de destino, quanto de horário.As escolhas são feitas e automáticamente o cliente é direcionado ao ônibus desejado.
+Nessa etapa o usuário e instruido à fazer suas escolhas tanto de destino quanto de horário.Estas são feitas  automáticamente e o cliente é direcionado ao ônibus desejado.
 
 ---
 	void escolher_onibus(int a,int b,Onibus &recM,Onibus &recN,Onibus &jpM,Onibus &jpN,string vetorbusrecM[MAXL],string vetorbusrecN[MAXL],string vetorbusjpM[MAXL],string vetorbusjpN[MAXL])
@@ -123,7 +123,7 @@ Nessa etapa o usuário e intruido a fazer suas escolhas tanto de destino, quanto
 
 ### SELEÇÃO DAS POLTRONAS
 
-Nesse momento o usuário se depara com os assentos do ônibus escolhido, podendo escolher o assento de sua preferencia.As poltrona reservadas por outros clientes são visualizadas em forma de x, indicando que aquele assente não pode ser escolhido.
+Nesse momento o usuário se depara com os assentos do ônibus escolhido, podendo escolher o assento de sua preferencia.As poltrona reservadas por outros clientes são visualizadas em forma de x, indicando que aquele assento não pode ser escolhido.
 
 <span></span>
 <img src="images/onibus.png">
@@ -195,7 +195,7 @@ primeira opção o sistema faz a transferência dos dados arrmazenados nas struc
 Esse processo é feito para todos os ônibus.
 
 ### ISSO É TUDO PESSOAL!
-Espero que tenham entendido a estrutura e a dinâmica do programa, se tiverem qualquer dúvida ou sugestão a respeito do mesmo, é só entrar em contato comigo através do email. Estou deixando algumas referencias caso as informações presentes aqui não tenham sido totalmente compreendidas. Muito obrigado!
+Espero que tenham entendido a estrutura e a dinâmica do programa.Se tiverem qualquer dúvida ou sugestão, a respeito do mesmo, é só entrar em contato comigo através do email. Estou deixando algumas referencias caso as informações presentes aqui não tenham sido totalmente compreendidas. Muito obrigado!
 
 ### REFERÊNCIAS
 - [Documentação classe fstream](http://www.cplusplus.com/reference/fstream/fstream/?kw=fstream)
