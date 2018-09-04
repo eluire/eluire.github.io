@@ -8,7 +8,7 @@ Olá! Nesse primeiro post irei mostrar um projeto desenvolvido por mim durante a
 Este projeto consiste na construção de um sistema de reserva de passagem de onibus. O mesmo foi implementado em c++ puro e foi inspirado em um sistema já existente concebido pela empresa Gontijo de transportes, à aplicação conta com muitas opções de destinos e horários, 
 apresentando uma interatividade bem grande com o cliente.Tomando como base esse sistema,tive a oportunidade de desenvolver algo bem perecido, porém com menos opções de horários e destinos.
 <span></span>
-<img src="images/bemvindo.png">
+![imagem](images/Bemvindo.png)
 ### LÓGICA DO PROGRAMA
 A lógica do programa é baseada na biblioteca **fstream** e na utilização do tipo **struct**.Basicamente no começo do programa há uma leitura dos arquivos .txt referentes a cada destido;dentro de cada arquivo entá contido informaçôes como: nome,RG,numero do assento e se o mesmo esta ocupado ou não.Esses dados são carregadas para as structs no inicio da implementação.Com este processo feito, o usuário poderá escolher tranquilamente seu destino e assento. Ao final do programa as informações geradas pelo usuário(as armazenadas nas structs em quanto o cliente fazia suas escolhas) são carregadas para os arquivos .txt referentes a cada destino.
 ### BIBLIOTECAS UTILIZADAS
@@ -126,7 +126,7 @@ Nessa etapa o usuário e instruido à fazer suas escolhas tanto de destino quant
 Nesse momento o usuário se depara com os assentos do ônibus escolhido, podendo escolher o assento de sua preferencia.As poltrona reservadas por outros clientes são visualizadas em forma de x, indicando que aquele assento não pode ser escolhido.
 
 <span></span>
-<img src="images/onibus.png">
+![imagem](images/onibus.png)
 
 Essas informaçoes são armazenadas diretamente nas structs da seguinte forma:
 
