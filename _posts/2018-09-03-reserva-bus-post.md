@@ -124,6 +124,7 @@ Nessa etapa o usuário e intruido a fazer suas escolhas tanto de destino, quanto
 ### SELEÇÃO DAS POLTRONAS
 
 Nesse momento o usuário se depara com os assentos do ônibus escolhido, podendo escolher o assento de sua preferencia.As poltrona reservadas por outros clientes são visualizadas em forma de x, indicando que aquele assente não pode ser escolhido.
+
 <span></span>
 <img src="images/onibus.png">
 
