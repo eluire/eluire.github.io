@@ -45,6 +45,7 @@ A lógica do programa é baseada na biblioteca **fstream** e na utilização do 
 ### INICIO DO PROGRAMA
 Ás structs sao carregadas com os dados que foram armazenados nos .txts refentes a cada destino.
 Esses arquivos tem a seguinte disposição:
+
 ---
 	0
 	vazio
